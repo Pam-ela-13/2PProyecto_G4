@@ -1,0 +1,106 @@
+{
+  "buses": [
+    {
+      "id": 1,
+      "numeroUnidad": "BUS-001",
+      "rutaId": 1,
+      "placa": "PSD-123",
+      "capacidad": 40,
+      "ocupacionActual": 28,
+      "estado": "en_ruta",
+      "velocidad": 45,
+      "ubicacion": {
+        "lat": -0.23895495364237287,
+        "lng": -79.1701486181057
+      },
+      "paraderoActualId": 1,
+      "paraderoSiguienteId": 2,
+      "tiempoEstimadoProximoParadero": 3
+    },
+    {
+      "id": 2,
+      "numeroUnidad": "BUS-002",
+      "rutaId": 1,
+      "placa": "PSD-456",
+      "capacidad": 40,
+      "ocupacionActual": 35,
+      "estado": "en_ruta",
+      "velocidad": 50,
+      "ubicacion": {
+        "lat": -0.27200,
+        "lng": -79.21000
+      },
+      "paraderoActualId": 3,
+      "paraderoSiguienteId": 4,
+      "tiempoEstimadoProximoParadero": 5
+    },
+    {
+      "id": 3,
+      "numeroUnidad": "BUS-003",
+      "rutaId": 1,
+      "placa": "PSD-789",
+      "capacidad": 35,
+      "ocupacionActual": 15,
+      "estado": "detenido",
+      "velocidad": 0,
+      "ubicacion": {
+        "lat": -0.31000,
+        "lng": -79.25000
+      },
+      "paraderoActualId": 5,
+      "paraderoSiguienteId": 6,
+      "tiempoEstimadoProximoParadero": 8
+    },
+    {
+      "id": 4,
+      "numeroUnidad": "BUS-004",
+      "rutaId": 1,
+      "placa": "PSD-012",
+      "capacidad": 35,
+      "ocupacionActual": 30,
+      "estado": "en_ruta",
+      "velocidad": 55,
+      "ubicacion": {
+        "lat": -0.35000,
+        "lng": -79.28500
+      },
+      "paraderoActualId": 7,
+      "paraderoSiguienteId": 8,
+      "tiempoEstimadoProximoParadero": 4
+    },
+    {
+      "id": 5,
+      "numeroUnidad": "BUS-005",
+      "rutaId": 1,
+      "placa": "PSD-345",
+      "capacidad": 45,
+      "ocupacionActual": 38,
+      "estado": "en_ruta",
+      "velocidad": 48,
+      "ubicacion": {
+        "lat": -0.39000,
+        "lng": -79.30500
+      },
+      "paraderoActualId": 9,
+      "paraderoSiguienteId": 10,
+      "tiempoEstimadoProximoParadero": 6
+    },
+    {
+      "id": 6,
+      "numeroUnidad": "BUS-006",
+      "rutaId": 1,
+      "placa": "PSD-678",
+      "capacidad": 45,
+      "ocupacionActual": 10,
+      "estado": "fuera_servicio",
+      "velocidad": 0,
+      "ubicacion": {
+        "lat": -0.4117684602284949,
+        "lng": -79.31309513376327
+      },
+      "paraderoActualId": null,
+      "paraderoSiguienteId": null,
+      "tiempoEstimadoProximoParadero": null
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+.mapa-container-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.controles-panel {
+  width: 320px;
+  background: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+  }
+}
+
+.rutas-selector {
+  .rutas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ruta-btn {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-left: 4px solid;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.2s;
+    text-align: left;
+
+    &:hover {
+      background: #e9ecef;
+      transform: translateX(4px);
+    }
+
+    &.active {
+      background: #007bff;
+      color: white;
+      border-color: transparent;
+
+      i {
+        color: white;
+      }
+    }
+
+    i {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .btn-limpiar {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #c82333;
+    }
+  }
+}
+
+.buses-list {
+  .buses-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bus-item {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f8f9fa;
+      transform: translateX(4px);
+    }
+
+    &.fuera-servicio {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .bus-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .bus-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex: 1;
+
+      strong {
+        font-size: 0.95rem;
+        color: #333;
+      }
+
+      .estado {
+        font-size: 0.8rem;
+        color: #6c757d;
+      }
+
+      .velocidad {
+        font-size: 0.75rem;
+        color: #28a745;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.leyenda {
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+
+  .leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    .icon-bus,
+    .icon-paradero {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .icon-paradero {
+      background: #007bff;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: #495057;
+    }
+  }
+}
+
+.mapa-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+#mapa-container {
+  width: 100%;
+  height: 100%;
+}
+
+.loader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #495057;
+  }
+}
+
+.custom-bus-icon {
+  background: none;
+  border: none;
+}
+
+.bus-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+}
+
+.custom-paradero-icon {
+  background: none;
+  border: none;
+}
+
+.paradero-marker {
+  color: #007bff;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.popup-bus,
+.popup-paradero {
+  font-family: Arial, sans-serif;
+
+  h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+    color: #666;
+
+    strong {
+      color: #333;
+    }
+  }
+
+  .tiempos-espera {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.85rem;
+
+    strong {
+      color: #333;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mapa-container-wrapper {
+    flex-direction: column;
+  }
+
+  .controles-panel {
+    width: 100%;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .mapa-wrapper {
+    height: 60vh;
+  }
+}

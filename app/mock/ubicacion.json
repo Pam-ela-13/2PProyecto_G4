@@ -1,0 +1,30 @@
+{
+  "configuracion": {
+    "intervaloActualizacion": 5000,
+    "velocidadMinima": 30,
+    "velocidadMaxima": 70,
+    "rangoVariacionVelocidad": 8
+  },
+  "ubicacionesHistoricas": [
+    {
+      "busId": 1,
+      "timestamp": "2025-12-17T10:30:00",
+      "ubicacion": {
+        "lat": -0.23895495364237287,
+        "lng": -79.1701486181057
+      },
+      "velocidad": 45,
+      "estado": "en_ruta"
+    },
+    {
+      "busId": 2,
+      "timestamp": "2025-12-17T10:30:00",
+      "ubicacion": {
+        "lat": -0.27200,
+        "lng": -79.21000
+      },
+      "velocidad": 50,
+      "estado": "en_ruta"
+    }
+  ]
+}

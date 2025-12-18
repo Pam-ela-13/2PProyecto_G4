@@ -1,0 +1,30 @@
+{
+  "rutas": [
+    {
+      "id": 1,
+      "nombre": "Ruta 23 - Santo Domingo Quevedo",
+      "codigo": "R-23",
+      "color": "#FF5722",
+      "descripcion": "Santo Domingo - Via Quevedo Km 24",
+      "horarioInicio": "05:00",
+      "horarioFin": "23:00",
+      "frecuencia": 10,
+      "tarifa": 0.50,
+      "distancia": 24.5,
+      "tiempoPromedio": 55,
+      "coordenadas": [
+        { "lat": -0.23895495364237287, "lng": -79.1701486181057 },
+        { "lat": -0.25500, "lng": -79.19000 },
+        { "lat": -0.27200, "lng": -79.21000 },
+        { "lat": -0.29000, "lng": -79.23000 },
+        { "lat": -0.31000, "lng": -79.25000 },
+        { "lat": -0.33000, "lng": -79.27000 },
+        { "lat": -0.35000, "lng": -79.28500 },
+        { "lat": -0.37000, "lng": -79.29500 },
+        { "lat": -0.39000, "lng": -79.30500 },
+        { "lat": -0.4117684602284949, "lng": -79.31309513376327 }
+      ],
+      "paraderosIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    }
+  ]
+}

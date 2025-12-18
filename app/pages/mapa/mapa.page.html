@@ -1,0 +1,68 @@
+<div class="mapa-container-wrapper">
+  <div class="controles-panel">
+    <div class="rutas-selector">
+      <h3>Rutas Disponibles</h3>
+      <div class="rutas-list">
+        <button 
+          *ngFor="let ruta of rutasData" 
+          class="ruta-btn"
+          [class.active]="rutaSeleccionadaId === ruta.id"
+          [style.border-left-color]="ruta.color"
+          (click)="seleccionarRuta(ruta.id)">
+          <i class="fas fa-route"></i>
+          <span>{{ ruta.nombre }}</span>
+        </button>
+      </div>
+      <button 
+        class="btn-limpiar" 
+        *ngIf="rutaSeleccionadaId"
+        (click)="limpiarRuta()">
+        <i class="fas fa-times"></i> Limpiar Ruta
+      </button>
+    </div>
+
+    <div class="buses-list">
+      <h3>Buses Activos</h3>
+      <div class="buses-items">
+        <div 
+          *ngFor="let bus of busesData" 
+          class="bus-item"
+          [class.fuera-servicio]="bus.estado === 'fuera_servicio'"
+          (click)="centrarEnBus(bus.id)">
+          <div class="bus-icon" [style.background-color]="getColorEstado(bus.estado)">
+            <i class="fas fa-bus"></i>
+          </div>
+          <div class="bus-info">
+            <strong>{{ bus.numeroUnidad }}</strong>
+            <span class="estado">{{ getTextoEstado(bus.estado) }}</span>
+            <span class="velocidad" *ngIf="bus.estado === 'en_ruta'">{{ bus.velocidad }} km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leyenda">
+      <h4>Leyenda</h4>
+      <div class="leyenda-item">
+        <div class="icon-bus" style="background: #28a745;"><i class="fas fa-bus"></i></div>
+        <span>En Ruta</span>
+      </div>
+      <div class="leyenda-item">
+        <div class="icon-bus" style="background: #ffc107;"><i class="fas fa-bus"></i></div>
+        <span>Detenido</span>
+      </div>
+      <div class="leyenda-item">
+        <div class="icon-paradero"><i class="fas fa-map-marker-alt"></i></div>
+        <span>Paradero</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mapa-wrapper">
+    <div *ngIf="cargandoMapa" class="loader-overlay">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p>Cargando mapa...</p>
+    </div>
+    <div id="mapa-container"></div>
+  </div>
+</div>

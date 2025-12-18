@@ -1,0 +1,154 @@
+{
+  "paraderos": [
+    {
+      "id": 1,
+      "nombre": "Terminal Santo Domingo",
+      "codigo": "P001",
+      "direccion": "Via Quevedo - Inicio",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.23895495364237287,
+        "lng": -79.1701486181057
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 5
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Km 3 Via Quevedo",
+      "codigo": "P002",
+      "direccion": "Via Quevedo Km 3",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.25500,
+        "lng": -79.19000
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 3
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Km 6 Via Quevedo",
+      "codigo": "P003",
+      "direccion": "Via Quevedo Km 6",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.27200,
+        "lng": -79.21000
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 7
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Km 9 Via Quevedo",
+      "codigo": "P004",
+      "direccion": "Via Quevedo Km 9",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.29000,
+        "lng": -79.23000
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 4
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Km 12 Via Quevedo",
+      "codigo": "P005",
+      "direccion": "Via Quevedo Km 12",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.31000,
+        "lng": -79.25000
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 6
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Km 15 Via Quevedo",
+      "codigo": "P006",
+      "direccion": "Via Quevedo Km 15",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.33000,
+        "lng": -79.27000
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 8
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "Km 18 Via Quevedo",
+      "codigo": "P007",
+      "direccion": "Via Quevedo Km 18",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.35000,
+        "lng": -79.28500
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 5
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "Km 21 Via Quevedo",
+      "codigo": "P008",
+      "direccion": "Via Quevedo Km 21",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.37000,
+        "lng": -79.29500
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 9
+      }
+    },
+    {
+      "id": 9,
+      "nombre": "Km 23 Via Quevedo",
+      "codigo": "P009",
+      "direccion": "Via Quevedo Km 23",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.39000,
+        "lng": -79.30500
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 4
+      }
+    },
+    {
+      "id": 10,
+      "nombre": "Km 24 Hacienda Zoila Luz",
+      "codigo": "P010",
+      "direccion": "Via Quevedo Km 24 Hda. Zoila Luz",
+      "distrito": "Santo Domingo",
+      "ubicacion": {
+        "lat": -0.4117684602284949,
+        "lng": -79.31309513376327
+      },
+      "rutasIds": [1],
+      "tiemposEspera": {
+        "1": 6
+      }
+    }
+  ]
+}
